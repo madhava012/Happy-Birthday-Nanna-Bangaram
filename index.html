@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nanna!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <img src="kitty-removebg-preview.png" alt="Loading icon" class="loading-icon">
+            <p class="loading-text">Loading something special...</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button id="start-btn" onclick="startExperience()">
+            ✨ Start Surprise ✨
+        </button>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="perfect song.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section class="header-section">
+        <div class="polaroid-frame">
+            <img src="DM2.jpeg" class="floating-heart">
+        </div>
+        <div id="entry-overlay">
+</div>
+        <div class="heart-container left" id="hearts-left">
+            <img src="DM11.jpeg" class="heart-img">
+        </div>
+        <h1 id="typewriter"></h1>
+        <div class="heart-container right" id="hearts-right">
+            <img src="DM11.jpeg" class="heart-img">
+        </div>
+        <h2 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d63384;">
+        Where it all began...
+        </h2>
+        <p style="font-size: 1.5rem; color: #555;">March 07, 2025 🗓️</p>
+        <p>Today is all about celebrating you and the joy you bring to my life.</p>
+        <button onclick="scrollToMemories()">See Our Memories</button>
+    </section>
+
+    <section id="memories" class="gallery-section">
+        <h2>Our Beautiful Memories</h2>
+        <div class="grid">
+            <div class="photo-card"><img src="DM6.jpeg" alt="Memory 1"></div>
+            <div class="photo-card"><img src="DM14.jpeg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="DM12.jpeg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="DM15.jpeg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="DM9.jpeg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="DM1.jpeg" alt="Memory 3"></div>
+            <div class="photo-card"><img src="DM.jpeg" alt="Memory 4"></div>
+            <div class="photo-card"><img src="DM3.jpeg" alt="Memory 5"></div>
+            <div class="photo-card"><img src="DM13.jpeg" alt="Memory 5"></div>
+            <div class="photo-card"><img src="DM5.jpeg" alt="Memory 5"></div>
+            <div class="photo-card"><img src="DM10.jpeg" alt="Memory 6"></div>
+            <div class="photo-card"><img src="DM7.jpeg" alt="Memory 6"></div>
+            <div class="photo-card"><img src="DM8.jpeg" alt="Memory 6"></div>
+        </div>
+        <section id="video-memories" class="gallery-section">
+            <h2>Moments in Motion 🎬</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="PMS6.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="PMS1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="PMS2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="PMS3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="PMS4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="PMS5.mp4" type="video/mp4">
+                    </video>
+                </div>
+                </div>
+        </section>
+    </section>
+
+    <section class="letter-section">
+        <button class="letter-btn" onclick="openLetter()">💌 Open My Letter</button>
+
+        <div class="letter-container" id="letterContainer">
+            <div class="video-wrapper" id="videoWrapper">
+                <video id="letterVideo" playsinline>
+                    <source src="asset/spidey.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="letter-envelope" id="letter">
+                <div class="letter-paper">
+                    <h3>My Love ❤️</h3>
+                    <p>
+                        Happy Birthday, Nanna 💕<br>
+Every year you’ve lived so far has been leading you toward me, and me toward you. Today, I’m celebrating the fact that you exist. I promise to love you with a depth that makes up for all the birthdays we spent apart. You are my greatest 'someday,' and I hope today you feel the warmth of a love that is already yours, even if it’s currently traveling through time to reach you.
+                        <br><br>
+                        Yours forever 💖
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-box">
+            <h3>A Special Message for You</h3>
+            <p>My love,
+As I look back on May 14, 2025, my eyes still fill with tears—not because I’m sad, but because my heart simply isn't big enough to hold the amount of love I feel for you. That day at the beach, with the sound of the waves and the salt in the air, I realized that you are my home. Those happy tears were my soul's way of saying 'thank you' for finding me. You are the greatest gift I have ever received, and I promise to cherish you for every sunset we have left."🥂✨</p>
+            <div class="hearts">❤️❤️❤️</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
